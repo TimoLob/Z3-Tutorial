@@ -79,9 +79,7 @@ print(s.check())
 print(s.model())
 ```
 
-### De Morgan's Law
 
-p & q == ~ (~p | ~q)
 
 ### Sudoku Solver
 
