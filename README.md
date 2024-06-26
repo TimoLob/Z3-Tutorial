@@ -22,7 +22,8 @@ Python jupyter notebooks.
 - How to declare variables and constants
 - Basic usage of the Z3-Solver using examples
   - System of linear equations
-  - The knapsack problem (introducing vectors)
+  - The knapsack problem, a variation based on an xkcd (introducing vectors)
+  - The knapsack problem (minimize/maximze) #todo
   - Subset sum (variables using list comprehension)
   - Sudoku solver
 - Simplifying formulas using Z3
@@ -41,7 +42,7 @@ Python jupyter notebooks.
 - Quantifiers #todo
   - ForAll
   - 
-
+- Maybe : Strategies and tactics [Link](https://ericpony.github.io/z3py-tutorial/strategies-examples.htm)
 
 ## References
 [Programming Guide - Microsoft](https://z3prover.github.io/papers/programmingz3.html)
