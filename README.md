@@ -1,21 +1,14 @@
 # Z3 Solver
 
-## Introduction
-#todo
-### What is Z3?
-
-SMT solver by microsoft.
-
-## What is Z3 used for?
-
-
-### What can Z3 not do?
-
-- Prime factorization of large numbers
-- sin/cos/tan
+Plan:
+1. Presentation notebook
+2. Sudoku
+3. If time left, advanced notebook
 
 ## Table of Contents
 Python jupyter notebooks.
+### Presentation
+
 ### Basics
 #### Sorts
 - Basic Datatypes
@@ -39,10 +32,9 @@ Python jupyter notebooks.
   - List
   - Enum
   - Uninterpreted Sorts #todo
-- Quantifiers #todo
+- Quantifiers 
   - ForAll
-  - 
-- Maybe : Strategies and tactics [Link](https://ericpony.github.io/z3py-tutorial/strategies-examples.htm)
+
 
 ## References
 [Programming Guide - Microsoft](https://z3prover.github.io/papers/programmingz3.html)
