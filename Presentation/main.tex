@@ -1,0 +1,76 @@
+\documentclass{beamer}
+\usepackage{listings}
+
+\usetheme[alternativetitlepage=normal]{Rub}
+
+\usepackage{graphicx} % Required for inserting images
+
+
+\title{Z3 - Tutorial}
+\author{Timo Lobitz}
+\date{July 2024}
+
+\begin{document}
+
+\maketitle
+\begin{frame}{Introduction}
+\begin{enumerate}
+    \item Smartphone company OnePluZ3 is about to launch their new flagship phone
+    \item You are facing several issues that need to be solved ASAP
+\end{enumerate}
+    
+\end{frame}
+\begin{frame}{Problem 1 - What to produce?}
+\begin{itemize}
+    \item You can produce 3 different items
+    \begin{itemize}
+        \item Phone cases, chargers, and smartphones
+    \end{itemize}
+    \item Each take different amounts of resources to produce and generate a different amount of profit
+    \item You have limited labor hours, machine hours and material available
+\end{itemize}
+    
+\end{frame}
+
+\begin{frame}{Problem 1 - What to produce?}
+Resources available:
+\begin{itemize}
+    \item 500 labor hours
+    \item 800 machine hours
+    \item 600 units of material
+\end{itemize}
+
+\begin{table}
+    \centering
+    \begin{tabular}{cccccc}
+        Name &  Profit & Labor Hours & Machine Time & Raw Materials \\
+        Phone Case &  10 & 3 & 3 & 4\\
+        Phone Charger & 30  & 5  & 3 &2 \\
+        Smartphone & 50  & 4 & 5 & 6\\
+    \end{tabular}
+    \label{tab:resource_cost}
+\end{table}
+    
+\end{frame}
+
+\begin{frame}{Problem 1 - Formalization}
+This can be expressed as a linear programming problem.  
+\begin{align}
+\max f(x) = 10 * A + 30 * B + 50 * C \\
+\text{with contraints}\\
+3*A + 5*B+ 4*C <= 500 \\
+3*A + 3*B + 5*C <= 800 \\
+4*A + 2*B + 6*C <= 600 \\
+A>=0 \\
+B>=0 \\
+C>=0
+\end{align}
+\end{frame}
+
+\begin{frame}{Problem 2 - Code Verification}
+The day 1 patch is currently in code review. You notice a strange function written by a coworker.
+\lstinputlisting[language=c]{magic.c}
+
+
+\end{frame}
+\end{document}
