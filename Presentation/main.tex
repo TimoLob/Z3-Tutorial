@@ -67,17 +67,33 @@ C>=0
 \end{align}
 \end{frame}
 
-\begin{frame}{Problem 2 - Code Verification}
+\begin{frame}{Problem 2 - Dependency Chaos}
+	As part of the production line, you need to manage different parts and chips that are used in different devices.
+	\begin{figure}
+		\includegraphics[scale=0.25]{../Images/deps.png}
+	\end{figure}
+\end{frame}
+
+\begin{frame}{Problem 2 - Formalization}
+	\begin{itemize}
+		\item Each part is represented by a boolean variable
+		\begin{itemize}
+		\item True if in production
+		\item False if not in production
+		\end{itemize}
+		\item A depends on B : $A \implies B$
+		\item A conflicts with B : $\neg A \lor \neg B$
+	\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Problem 3 - Code Verification}
 The day 1 patch is currently in code review. You notice a strange function written by a coworker.
 \lstinputlisting[language=c]{magic.c}
-
-
 \end{frame}
 
-\begin{frame}{Problem 3 - Dependency Chaos}
-    Last minute, you decide to replace one chip in the production line. This chip however is used in multiple products.
 
-    
-    
-\end{frame}
+	
+
 \end{document}
