@@ -93,6 +93,8 @@ The day 1 patch is currently in code review. You notice a strange function writt
 \lstinputlisting[language=c]{magic.c}
 \end{frame}
 
+
+% Z3 Introduction
 \begin{frame}{Z3}
 \begin{columns}
 \begin{column}{0.5\textwidth}
@@ -110,10 +112,60 @@ The day 1 patch is currently in code review. You notice a strange function writt
 
 \end{columns}
 
+\end{frame}
+
+\begin{frame}{Z3 - Usage}
+	
+	
+\begin{columns}
+	\begin{column}{0.4\textwidth}
+		4 Step pattern:
+		\begin{enumerate}
+			\item Create Solver
+			\item Define variables
+			\item Add constraints
+			\item Check
+		\end{enumerate}
+	\end{column}
+	\begin{column}{0.6\textwidth}
+		\pause
+		\lstinputlisting[language=python]{usage.py}
+		
+	\end{column}
+	
+\end{columns}
+\end{frame}
+
+
+\begin{frame}{Variables}
+	
+\begin{columns}
+	\begin{column}{0.4\textwidth}
+			\lstinputlisting[language=python]{variables.py}
+	\end{column}
+	\begin{column}{0.6\textwidth}
+			\lstinputlisting[language=python]{variables2.py}
+		
+	\end{column}
+	
+\end{columns}
 
 
 \end{frame}
 
+\begin{frame}{Arrays}
+	Arrays in Z3 map from one datatype to another. They support Store and Select operations.
+	\lstinputlisting[language=python]{arrays.py}
 	
+\end{frame}
+
+\begin{frame}{Custom Datatypes - Enum}
+	\lstinputlisting[language=python]{enum.py}
+\end{frame}
+
+
+\begin{frame}{Custom Datatypes - List}
+	\lstinputlisting[language=python]{list.py}
+\end{frame}
 
 \end{document}
