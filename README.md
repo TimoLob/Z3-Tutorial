@@ -1,5 +1,9 @@
 # Z3 Solver
 
+```
+pip install z3-solver
+```
+
 Plan:
 1. Presentation notebook
 2. Sudoku
